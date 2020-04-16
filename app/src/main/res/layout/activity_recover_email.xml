@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".RecoverEmail">
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/email_address"
+            android:text="Email Address"
+            android:gravity="left"
+            android:textColor="@color/colorTealPrimary"
+            android:textSize="@dimen/small_texts" />
+
+        <EditText
+            android:id="@+id/email_address"
+            style="@style/custom_edit_field"
+            android:gravity="center"
+            android:hint="Enter Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/enter_code"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:hint="Enter code"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/new_password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:hint="Enter new password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/change_password"
+            android:layout_marginTop="10dp"
+            android:text="Check"
+            android:background="@color/colorTealPrimary"
+            style="@style/custom_edit_field"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_labels" />
+
+    </LinearLayout>
+</LinearLayout>

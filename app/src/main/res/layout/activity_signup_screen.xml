@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".LoginScreen">
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:text="Skip"
+        android:textColor="@color/colorTealPrimary"
+        android:textSize="@dimen/headings"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Create your account"
+        android:textColor="@color/colorTealPrimary"
+        android:textSize="@dimen/headings"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="4.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/email_address"
+            android:text="Email Address"
+            android:textColor="@color/colorTealPrimary"
+            android:textSize="@dimen/small_texts" />
+
+        <EditText
+            android:id="@+id/email_address"
+            style="@style/custom_edit_field"
+            android:hint="john@gmail.com"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/custom_edit_field"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:drawableRight="@drawable/forward_icon"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="SIGN UP"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_labels" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Already have an account?"
+        android:textColor="@color/colorTealPrimary"
+        android:textSize="@dimen/small_texts" />
+
+    <TextView
+        android:id="@+id/go_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@color/colorTealPrimary"
+        android:textSize="@dimen/btn_labels"
+        android:textStyle="bold" />
+
+</LinearLayout>
